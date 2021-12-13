@@ -1,0 +1,36 @@
+<p style="text-align:center"><strong>VEHICLE DETAILS ENTRY</strong></p><br>
+  <p>
+    <mat-form-field class="inputs" appearance="fill">
+        <mat-label>Select Customer</mat-label>
+        <mat-select>
+          <mat-option *ngFor="let food of foods" [value]="food.value">
+            {{food.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+  </p>  
+  <p>
+    <mat-form-field class="inputs" appearance="legacy">
+      <mat-label>Vehicle Name</mat-label>
+      <input matInput placeholder="Enter Customer Email">
+      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      <mat-hint></mat-hint>
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field class="inputs" appearance="legacy">
+      <mat-label>Vehicle Model</mat-label>
+      <input matInput placeholder="Enter Customer Phone Number">
+      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      <mat-hint></mat-hint>
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field class="inputs" appearance="legacy">
+      <mat-label>Vehicle VIN</mat-label>
+      <textarea  matInput rows=4></textarea>
+      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      <mat-hint></mat-hint>
+    </mat-form-field>
+  </p>
+  <a routerLink="../vehicleslist"><button class="btn" style="margin-left: 25%;" mat-raised-button>Save</button></a>

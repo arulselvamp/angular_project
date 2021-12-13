@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+.homepage{
+    color:rebeccapurple;
+    text-align: center;
+    font-size: 22px;
+    margin-top:180px;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.example-spacer {
+    flex: 1 1 auto;
+  }
+.mat-elevation-z5{
+    position:relative;
+    z-index:2;
+}
+.inputs{
+    width:30%; 
+    margin-left: 10%;
+}
+.btn:hover{
+    background-color:aqua;
+    color:black;
+}
+table {
+    width: 100%;
+  }
